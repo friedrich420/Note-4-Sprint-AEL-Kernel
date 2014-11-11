@@ -19,135 +19,13 @@
 #ifndef _MDNIE_LITE_TUNING_DATA_K_FHD_
 #define _MDNIE_LITE_TUNING_DATA_K_FHD_
 
-/* 2014.09.26 */
+/* 2014.08.21 */
 
 #define ADDRESS_SCR_WHITE_RED   0x97
 #define ADDRESS_SCR_WHITE_GREEN 0x99
 #define ADDRESS_SCR_WHITE_BLUE  0x9B
 
 ////////////////// UI /// /////////////////////
-
-#if defined(CONFIG_MDNIE_LITE_CONTROL)
-char LITE_CONTROL_1[] = {
-    0xEB,
-    0x01,
-    0x00,
-    0x33,
-    0x00, //4 = sharpen
-};
-
-char LITE_CONTROL_2[] = {
-    0xEC,
-    0x00,
-    0x00,
-    0x00,
-    0x00,
-    0x00,
-    0x00,
-    0x00,
-    0x00,
-    0x00,
-    0x00,
-    0x00,
-    0x00,
-    0x00,
-    0x00,
-    0x00,
-    0x00,
-    0x00,
-    0x00, //18 = cyan_red
-    0xff, //19 = red_red
-    0xff, //20 = cyan_green
-    0x00, //21 = red_green
-    0xff, //22 = cyan_blue
-    0x00, //23 = red_blue
-    0xff, //24 = magenta_red
-    0x00, //25 = green_red
-    0x00, //26 = magenta_green
-    0xff, //27 = green_green
-    0xff, //28 = magenta_blue
-    0x00, //29 = green_blue
-    0xff, //30 = yellow_red
-    0x00, //31 = blue_red
-    0xff, //32 = yellow_green
-    0x00, //33 = blue_green
-    0x00, //34 = yellow_blue
-    0xff, //35 = blue_blue
-    0xff, //36 = white_red
-    0x00, //37 = black_red
-    0xff, //38 = white_green
-    0x00, //39 = black_green
-    0xff, //40 = white_blue
-    0x00, //41 = black_blue
-    0x00, //curve 1 b
-    0x20, //curve 1 a
-    0x00, //curve 2 b
-    0x20, //curve 2 a
-    0x00, //curve 3 b
-    0x20, //curve 3 a
-    0x00, //curve 4 b
-    0x20, //curve 4 a
-    0x02, //curve 5 b
-    0x1b, //curve 5 a
-    0x02, //curve 6 b
-    0x1b, //curve 6 a
-    0x02, //curve 7 b
-    0x1b, //curve 7 a
-    0x01, //curve 8 b
-    0x1b, //curve 8 a
-    0x09, //curve 9 b
-    0xa6, //curve 9 a
-    0x09, //curve10 b
-    0xa6, //curve10 a
-    0x09, //curve11 b
-    0xa6, //curve11 a
-    0x09, //curve12 b
-    0xa6, //curve12 a
-    0x00, //curve13 b
-    0x20, //curve13 a
-    0x00, //curve14 b
-    0x20, //curve14 a
-    0x00, //curve15 b
-    0x20, //curve15 a
-    0x00, //curve16 b
-    0x20, //curve16 a
-    0x00, //curve17 b
-    0x20, //curve17 a
-    0x00, //curve18 b
-    0x20, //curve18 a
-    0x00, //curve19 b
-    0x20, //curve19 a
-    0x00, //curve20 b
-    0x20, //curve20 a
-    0x00, //curve21 b
-    0x20, //curve21 a
-    0x00, //curve22 b
-    0x20, //curve22 a
-    0x00, //curve23 b
-    0x20, //curve23 a
-    0x00, //curve24 b
-    0xFF, //curve24 a
-    0x04, //cc r1 0.08x
-    0x39,
-    0x1f, //cc r2
-    0xd0,
-    0x1f, //cc r3
-    0xf7,
-    0x1f, //cc g1
-    0xe8,
-    0x04, //cc g2
-    0x21,
-    0x1f, //cc g3
-    0xf7,
-    0x1f, //cc b1
-    0xe8,
-    0x1f, //cc b2
-    0xd0,
-    0x04, //cc b3
-    0x48,
-};
-#endif
-
 static char SCREEN_CURTAIN_1[] = {
 	/* start */
 	0xEB,
@@ -7487,7 +7365,7 @@ char LOCAL_CE_2[] = {
 	0x01, //cs_gain 10
 	0x40,
 	0x00, //curve_1_b
-	0x6b, //curve_1_a
+	0x7b, //curve_1_a
 	0x03, //curve_2_b
 	0x48, //curve_2_a
 	0x08, //curve_3_b
@@ -7512,26 +7390,26 @@ char LOCAL_CE_2[] = {
 	0x28, //curve12_a
 	0x19, //curve13_b
 	0x22, //curve13_a
-	0x03, //curve14_b
-	0xb3, //curve14_a
-	0x03, //curve15_b
-	0xb3, //curve15_a
-	0x03, //curve16_b
-	0xb3, //curve16_a
-	0x03, //curve17_b
-	0xb3, //curve17_a
-	0x27, //curve18_b
-	0x21, //curve18_a
-	0x34, //curve19_b
-	0x1c, //curve19_a
-	0x40, //curve20_b
-	0x19, //curve20_a
-	0x45, //curve21_b
-	0x18, //curve21_a
-	0x58, //curve22_b
-	0x15, //curve22_a
-	0x58, //curve23_b
-	0x15, //curve23_a
+	0x70, //curve14_b
+	0xf7, //curve14_a
+	0x70, //curve15_b
+	0xf7, //curve15_a
+	0x70, //curve16_b
+	0xf7, //curve16_a
+	0x70, //curve17_b
+	0xf7, //curve17_a
+	0x66, //curve18_b
+	0x1a, //curve18_a
+	0x76, //curve19_b
+	0x14, //curve19_a
+	0x82, //curve20_b
+	0x11, //curve20_a
+	0x92, //curve21_b
+	0x0e, //curve21_a
+	0x98, //curve22_b
+	0x0d, //curve22_a
+	0x9f, //curve23_b
+	0x0c, //curve23_a
 	0x00, //curve24_b
 	0xFF, //curve24_a
 	0x30, //linear_on ascr_skin_on strength 0 0 00000
@@ -7554,8 +7432,8 @@ char LOCAL_CE_2[] = {
 	0x34,
 	0x83,
 	0xff, //ascr_skin_Rr
-	0x30, //ascr_skin_Rg
-	0x30, //ascr_skin_Rb
+	0x50, //ascr_skin_Rg
+	0x60, //ascr_skin_Rb
 	0xff, //ascr_skin_Yr
 	0xff, //ascr_skin_Yg
 	0x00, //ascr_skin_Yb
