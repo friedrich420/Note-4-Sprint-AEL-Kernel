@@ -134,8 +134,6 @@ static struct leds_control {
 };
 #endif
 
->>>>>>> 7d2be86... LED Extended Control for the Note 4 [twistedumbrella and ktoonsez]
->>>>>>> b03b290... LED Extended Control for the Note 4 [twistedumbrella and ktoonsez]
 #if defined (CONFIG_SEC_FACTORY)
 #if defined(CONFIG_SEC_TRLTE_PROJECT) || defined(CONFIG_SEC_TBLTE_PROJECT)
 static int jig_val;
@@ -433,8 +431,6 @@ static ssize_t store_max77843_rgb_lowpower(struct device *dev,
     max77843_rgb_set_state(&max77843_rgb->led[RED], led_dynamic_current, LED_BLINK);
     max77843_rgb_set_state(&max77843_rgb->led[GREEN], led_dynamic_current, LED_BLINK);
     max77843_rgb_set_state(&max77843_rgb->led[BLUE], led_dynamic_current, LED_BLINK);
->>>>>>> 7d2be86... LED Extended Control for the Note 4 [twistedumbrella and ktoonsez]
->>>>>>> b03b290... LED Extended Control for the Note 4 [twistedumbrella and ktoonsez]
 	pr_info("led_lowpower mode set to %i, led_dynamic_current set to %d\n", led_lowpower, led_dynamic_current);
 	dev_dbg(dev, "led_lowpower mode set to %i\n", led_lowpower);
 
